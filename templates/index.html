@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monkey Banana Simulation</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🐒 Monkey Banana Problem</h1>
+
+    <!-- ROOM -->
+    <div class="room">
+        <div class="window"></div>
+
+        <div id="monkey">🐒</div>
+        <div id="box">📦</div>
+        <div id="banana">🍌</div>
+    </div>
+
+    <!-- CONTROLS -->
+    <div class="controls">
+        <button onclick="start()">Start Simulation</button>
+        <button onclick="resetGame()">Reset</button>
+    </div>
+
+    <!-- STEPS -->
+    <div class="steps">
+        <h3>Steps</h3>
+        <ul id="steps"></ul>
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

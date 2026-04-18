@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(120deg, #eef2ff, #e0f7fa);
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* ROOM */
+.room {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* FLOOR */
+.room::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    background: linear-gradient(#c89b6d, #8b5e3c);
+}
+
+/* WINDOW */
+.window {
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    width: 100px;
+    height: 80px;
+    background: #87ceeb;
+    border: 3px solid #333;
+    border-radius: 5px;
+}
+
+/* OBJECTS */
+#monkey, #box, #banana {
+    position: absolute;
+    font-size: 50px;
+}
+
+/* SMOOTH ANIMATION */
+#monkey {
+    left: 50px;
+    bottom: 70px;
+    transition: all 0.8s ease;
+}
+
+#box {
+    left: 250px;
+    bottom: 70px;
+    transition: all 0.8s ease;
+}
+
+#banana {
+    left: 500px;
+    top: 40px;
+}
+
+/* CONTROLS */
+.controls {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #4338ca;
+    transform: scale(1.05);
+}
+
+/* STEPS */
+.steps {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.steps ul {
+    max-height: 150px;
+    overflow-y: auto;
+}
